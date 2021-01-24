@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/animation_list"
+    android:id="@+id/container">
+
+    <id.indosw.android3dlayout.container.DepthContainerRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <id.indosw.android3dlayout.view.DepthRelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            app:depth_elevation="30dp"
+            app:depth_value="25dp"
+            app:depth_zIndex="0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/homer"
+                tools:ignore="ContentDescription" />
+
+        </id.indosw.android3dlayout.view.DepthRelativeLayout>
+
+    </id.indosw.android3dlayout.container.DepthContainerRelativeLayout>
+</LinearLayout>
